@@ -7,5 +7,6 @@ requires-python = ">=3.13"
 dependencies = [
 	"flask",
 	"gunicorn>=26.0.0",
+	"python-dotenv>=1.2.2",
 	"ruff",
 ]
