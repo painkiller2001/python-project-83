@@ -1,0 +1,19 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}Page Analyzer{% endblock %}
+
+
+{% block content %}
+<!-- этот блок заменит блок content из родительского шаблона -->
+
+
+
+<div style="width: 50%; height: 350px; background-color: #070118; margin: 50px auto; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px; box-sizing: border-box; padding: 20px;">
+    <h1 style="font-size: 40px; color: rgb(255, 255, 255); margin: 0; text-align: center;">Page Analyzer</h1>
+    <p style="font-size: 25px; color: rgb(255, 255, 255); margin: 0; text-align: center;">Бесплатно проверяйте сайты на SEO пригодность</p>
+    <form action="/websites" method="post">
+        <button type="submit" name="url-process" style="width: 250px; color:aliceblue; background-color: #4a14dd;">Process</button>
+    </form>
+</div>
+
+{% endblock %}
