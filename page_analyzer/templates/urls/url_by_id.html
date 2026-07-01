@@ -1,0 +1,18 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}URL: ID {{ url_id }}{% endblock %}
+
+
+{% block content %}
+<!-- этот блок заменит блок content из родительского шаблона -->
+
+{% if error %}
+    <p> {{ error }}</p>
+
+{% else %}
+    <p> ID : {{ url_id }}</p>
+    <p> URL : {{ url }}</p>
+
+{% endif %}
+
+{% endblock %}
